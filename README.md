@@ -1,124 +1,48 @@
-Featured Events Page - Dynamics 360 Internship Case Study
-Overview
-This project is a full-stack, responsive "Featured Events" webpage developed for the Dynamics 360 Web Development Internship Case Study. It features a modern, mobile-friendly UI with a MongoDB backend for dynamic event management, JWT-based registration, and advanced filtering capabilities.
-Technologies Used
+Featured Events Page - Dynamics 360 Internship Case Study Overview This project is a full-stack, responsive "Featured Events" webpage developed for the Dynamics 360 Web Development Internship Case Study. It features a modern, mobile-friendly UI with a MongoDB backend for dynamic event management, simulated JWT-based registration, and advanced filtering capabilities. Technologies Used Frontend
 
-Frontend:
-React 18.3.1: For a component-based, dynamic UI.
-Bootstrap 5.3.3 and React-Bootstrap: For responsive styling and components.
-Axios: For API requests.
-CSS3: For custom styling (hover effects, gradients).
+React 18.3.1: Component-based UI. React-Bootstrap 5.3.3: Responsive styling. Axios: API requests. CSS3: Custom styling (hover effects, gradients).
 
+Backend
 
-Backend:
-Node.js and Express: For a robust API server.
-MongoDB (MongoDB Atlas): For storing event data.
-Mongoose: For MongoDB schema modeling.
-JSON Web Token (JWT): For simulated user registration.
-CORS and Dotenv: For secure API communication and environment configuration.
+Node.js & Express: Robust API server. MongoDB (Atlas): Event data storage. Mongoose: Schema modeling. JSON Web Token (JWT): Simulated user registration. CORS & Dotenv: Secure API communication.
 
+Deployment
 
-Deployment:
-Backend: Deployed on Vercel (or similar).
-Frontend: Deployed on Netlify (or GitHub Pages).
-
-
+Backend: Vercel (https://dynamics360-events-page-l9d7.vercel.app) Frontend: Netlify (https://usama-jamshed-app.netlify.app) GitHub: https://github.com/Usama6270/dynamics360-events-page
 
 Features
 
-Responsive Navigation Bar: Includes a logo and links to "Home," "Events," and "Contact," with a mobile-friendly hamburger menu.
-Hero Section: Displays "Discover Events Near You" with a gradient background.
-Featured Events Section: Dynamically fetches and displays 4+ event cards from MongoDB, each with:
-Event name
-Date and time (formatted using toLocaleString)
-Location
-Description
-"Register" button with JWT-based authentication
+Responsive Navigation Bar: Features links to "Home," "Events," and "Contact" with a mobile-friendly hamburger menu. Hero Section: Displays "Discover Events Near You" with a gradient background. Featured Events Section: Dynamically fetches and displays 4+ event cards from MongoDB. Includes event name, date/time (formatted using toLocaleString), location, description, and a "Register" button with simulated JWT-based authentication.
 
-
-Search Bar: Filters events by name in real-time.
-Bonus Features:
-MongoDB Integration: Events are stored and retrieved from MongoDB Atlas using the provided MONGO_URL.
-JWT Authentication: Simulated user registration with JWT tokens for secure interactions.
-Date Filter: A button to filter upcoming events (events with dates >= today).
-Enhanced UI: Smooth hover effects, responsive card layout, and placeholder images for visual appeal.
-
-
+Search Bar: Enables real-time filtering of events by name. Date Filter: Provides a button to filter upcoming events (dates >= today). Enhanced UI: Incorporates smooth hover effects, responsive card layout, event-specific images, and a professional footer across all pages. About Us Section: Showcases team profiles with circular-framed images.
 
 Setup Instructions
 
-Clone the Repository:git clone <your-repository-url>
+Clone the Repository:git clone https://github.com/Usama6270/dynamics360-events-page.git
 
+Backend Setup: Navigate to the backend directory and install dependencies:cd backend npm install
 
-Backend Setup:
-Navigate to backend/:cd backend
-npm install
+Start the backend server:npm start
 
+Frontend Setup: Navigate to the frontend directory and install dependencies:cd frontend npm install
 
-Create a .env file with the provided MONGO_URL, JWT_SECRET, PORT, and FRONTEND_URL.
-Seed initial event data (run in MongoDB shell or via script):db.events.insertMany([
-  { name: "Music Festival", date: ISODate("2025-05-10T18:00:00Z"), location: "Central Park, Islamabad", description: "Live music with local bands.", image: "https://via.placeholder.com/300x200?text=Music+Festival" },
-  { name: "Tech Meetup", date: ISODate("2025-05-15T15:00:00Z"), location: "Tech Hub, Gulberg Greens", description: "Network with tech enthusiasts.", image: "https://via.placeholder.com/300x200?text=Tech+Meetup" },
-  { name: "Art Exhibition", date: ISODate("2025-05-20T10:00:00Z"), location: "Art Gallery, F-7 Markaz", description: "Explore stunning artworks.", image: "https://via.placeholder.com/300x200?text=Art+Exhibition" },
-  { name: "Food Carnival", date: ISODate("2025-05-25T12:00:00Z"), location: "Lake View Park, Islamabad", description: "Savor delicious cuisines.", image: "https://via.placeholder.com/300x200?text=Food+Carnival" }
-]);
+Start the frontend application:npm start
 
+Live Preview
 
-Start the backend:npm start
-
-
-
-
-Frontend Setup:
-Navigate to frontend/:cd frontend
-npm install
-
-
-Create a .env file with REACT_APP_API_URL=http://localhost:9000/api.
-Start the frontend:npm start
-
-
-
-
-Live Preview:
-Deploy the backend to Vercel: Connect the backend folder to Vercel, set environment variables, and note the API URL.
-Deploy the frontend to Netlify: Connect the frontend folder, set REACT_APP_API_URL to the backend URL, and note the live URL.
-Live preview: <your-netlify-url> (update after deployment).
-
-
-Dependencies:
-Ensure Node.js (18.20.4 recommended) and MongoDB Atlas are set up.
-Internet connection required for CDN resources (Bootstrap, images).
-
-
-
-Deployment Instructions
-
-Backend:
-Push backend to a GitHub repository.
-Deploy to Vercel by linking the repository and adding environment variables (MONGO_URL, JWT_SECRET, PORT, FRONTEND_URL).
-Update frontend/.env with the Vercel API URL.
-
-
-Frontend:
-Push frontend to a GitHub repository.
-Deploy to Netlify by linking the repository and setting REACT_APP_API_URL.
-Alternatively, use GitHub Pages for the frontend (build and deploy the build folder).
-
-
-Update this README with the live URLs after deployment.
+Frontend: https://usama-jamshed-app.netlify.app Events Page: https://usama-jamshed-app.netlify.app/events Backend: https://dynamics360-events-page-l9d7.vercel.app GitHub Repository: https://github.com/Usama6270/dynamics360-events-page
 
 Bonus Features Implemented
 
-MongoDB Integration: Events are dynamically fetched from MongoDB Atlas, ensuring scalability.
-JWT Authentication: Simulated registration with JWT tokens, enhancing security.
-Date Filter: Filters events to show only upcoming ones, improving user experience.
-Professional UI: Modern design with hover effects, responsive layout, and consistent styling.
+MongoDB Integration: Enables dynamic event fetching from MongoDB Atlas for scalability. JWT Authentication: Implements simulated registration with JWT tokens for secure interactions. Date Filter: Enhances user experience by filtering events to show only upcoming ones. Professional UI: Features a modern design with hover effects, responsive layout, and consistent styling.
 
 Notes
 
-The project exceeds requirements by implementing a full MERN stack with authentication and advanced filtering.
-The code is optimized for performance and maintainability, with clear separation of concerns.
-Deployment is streamlined for Vercel (backend) and Netlify (frontend), ensuring accessibility.
+This project exceeds the internship requirements by implementing a full MERN stack with simulated authentication and advanced filtering. Deployment is optimized on Vercel (backend) and Netlify (frontend) for seamless accessibility.
 
-For questions, contact <your-email> or hr@dynamics360.net.
+Contact For questions, please contact hr@dynamics360.net. Submitted by: Usama JamshedSubmission Date: June 2, 2025For: Dynamics 360 Web Development Internship
+
+Screenshot:
+![alt text](image-1.png)
+![alt text](image-2.png)
+![alt text](image.png)
