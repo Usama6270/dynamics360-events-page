@@ -40,7 +40,7 @@ Notes
 
 This project exceeds the internship requirements by implementing a full MERN stack with simulated authentication and advanced filtering. Deployment is optimized on Vercel (backend) and Netlify (frontend) for seamless accessibility.
 
-Contact For questions, please contact hr@dynamics360.net. Submitted by: Usama JamshedSubmission Date: June 2, 2025For: Dynamics 360 Web Development Internship
+Contact For questions, please contact hr@dynamics360.net. Submitted by: Usama Jamshed Submission Date: June 2, 2025 For: Dynamics 360 Web Development Internship
 
 Screenshot:
 ![alt text](image-1.png)
